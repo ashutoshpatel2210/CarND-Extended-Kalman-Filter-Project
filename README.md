@@ -95,3 +95,22 @@ The EKF accuracy was:
 
 ![png](./Dataset1.png)
 ![png](./Dataset2.png)
+
+### Follows the Correct Algorithm
+* Criteria : Your Sensor Fusion algorithm follows the general processing flow. 
+  Sensor fusion algorithm implementation can be found src/kalman_filter.cpp and it is used to predict and to update at src/FusionEKF.cpp line 44 to 154 from both Lidar and Radar data.
+  
+* Criteria : Your Kalman Filter algorithm handles the first measurements appropriately.
+  Kalaman filter algorithm handles first measurement approriately at line 48-90 in src/FusionEKF.cpp.
+  
+* Criteria : Your Kalman Filter algorithm first predicts then updates.
+Kalaman filter algorithm handles first predict line 126 and then update at line 142(Radar) and 147(Lidar) in src/FusionEKF.cpp.
+
+* Criteria : Your Kalman Filter can handle radar and lidar measurements.
+Kalaman filter algorithm handles updates Radar and Lidar data differently at line 142(Radar) and 147(Lidar) in src/FusionEKF.cpp. The function Update() at line 37 scr/kalman_filter.cpp and UpdateEKF() at line 56 scr/kalman_filter.cpp handles Lidar and Radar data appropriately. 
+
+### Code Efficiency
+
+* Criteria : Your algorithm should avoid unnecessary calculations.
+Implementation in scr/kalman_filter.cpp and src/FusionEKF.cpp does not have unnecessary calculations.
+
