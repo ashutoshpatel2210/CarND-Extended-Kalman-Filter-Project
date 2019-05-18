@@ -15,7 +15,7 @@ This project involves the Term 2 Simulator which can be downloaded [here](https:
 This repository includes two files that can be used to set up and install [uWebSocketIO](https://github.com/uWebSockets/uWebSockets) for either Linux or Mac systems. For windows you can use either Docker, VMware, or even [Windows 10 Bash on Ubuntu](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/) to install uWebSocketIO. Please see the uWebSocketIO Starter Guide page in the classroom within the EKF Project lesson for the required version and installation scripts.
 
 ## Dependency installtion
-####Run ./install-ubuntu.sh in the terminal window to make sure the necessary dependencies are installed (you may need to run chmod u+x install-ubuntu.sh to make the file executable).
+* Run ./install-ubuntu.sh in the terminal window to make sure the necessary dependencies are installed (you may need to run chmod u+x install-ubuntu.sh to make the file executable).
 
 ## Other Important Dependencies
 
