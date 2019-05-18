@@ -6,11 +6,11 @@ In this project you will utilize a kalman filter to estimate the state of a movi
 This project involves the Term 2 Simulator which can be downloaded [here](https://github.com/udacity/self-driving-car-sim/releases).
 
 ## Files structure in Project
-### starter code in the src folder
-### a README file with instructions on compiling the code
-### a Docs folder, which contains details about the structure of the code templates
-### CMakeLists.txt file that will be used when compiling your code (you do not need to change this file)
-### a data file for testing your extended Kalman filter which the simulator interface provides
+* Code in the src folder
+* README file with instructions on compiling the code
+* Docs folder, which contains details about the structure of the code templates
+* CMakeLists.txt file that will be used when compiling your code (you do not need to change this file)
+* data file for testing your extended Kalman filter which the simulator interface provides
 
 This repository includes two files that can be used to set up and install [uWebSocketIO](https://github.com/uWebSockets/uWebSockets) for either Linux or Mac systems. For windows you can use either Docker, VMware, or even [Windows 10 Bash on Ubuntu](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/) to install uWebSocketIO. Please see the uWebSocketIO Starter Guide page in the classroom within the EKF Project lesson for the required version and installation scripts.
 
@@ -55,9 +55,9 @@ for instructions and the project rubric.
 ## Project Specification (Rubric Points)
 
 ### Compiling
-#### Criteria : Your code should compile.
-All code is compiling withouth errors and genrated ExtendedKF binary. 
-#### Build output
+* Criteria : Your code should compile.
+   All code is compiling withouth errors and genrated ExtendedKF binary. 
+* Build output
 ```
 cmake .. && make
 -- The C compiler identification is GNU 5.4.0
@@ -86,9 +86,12 @@ Scanning dependencies of target ExtendedKF
 [100%] Built target ExtendedKF
 ```
 ### Accuracy
-#### Criteria : px, py, vx, vy output coordinates must have an RMSE <= [.11, .11, 0.52, 0.52] when using the file: "obj_pose-laser-radar-synthetic-input.txt" which is the same data file the simulator uses for Dataset 1.
+* Criteria : px, py, vx, vy output coordinates must have an RMSE <= [.11, .11, 0.52, 0.52] when using the file: "obj_pose-laser-radar-synthetic-input.txt" which is the same data file the simulator uses for Dataset 1.
 
 The EKF accuracy was:
 
-Dataset 1 : RMSE <= [0.0973, 0.0855, 0.4513, 0.4399]
-Dataset 2 : RMSE <= [0.0726, 0.0965, 0.4216, 0.4932]
+    * Dataset 1 : RMSE <= [0.0973, 0.0855, 0.4513, 0.4399]
+    * Dataset 2 : RMSE <= [0.0726, 0.0965, 0.4216, 0.4932]
+
+![png](./Dataset1.png)
+![png](./Dataset2.png)
